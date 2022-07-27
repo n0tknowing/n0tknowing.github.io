@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main id="mainwrap">
+<div id="main">
+<header>
+<h1>{{ .Title }}</h1>
+<p>
+<strong>Last modification on {{ .Date.Format "January 2, 2006" }}</strong>
+</p>
+</header>
+{{ .Content }}
+</div>
+</main>
+{{ end }}
